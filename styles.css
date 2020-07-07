@@ -1,5 +1,17 @@
 <style>
-  Test
+
+  box-sizing {
+    float: right;
+    padding: 15px;
+  }
+
+  .sanserif {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h4 {
+    color: dodgerblue;
+  }
 
 
 </style>
