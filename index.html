@@ -1,104 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Lesson 04 Assignment</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lesson 04 Assignment</title>
+    <style>
+    code {
+background: #2db34a;
+border-radius: 6px;
+color: #fff;
+display: block;
+font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+padding: 24px 15px;
+text-align: center;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Style the header */
 header {
-  background-color: lightseagreen;
+  background-color: mediumturquoise;
   padding: 30px;
-  text-align: center;
-  font-size: 35px;
+  text-align: left;
+  font-size: 30px;
   color: white;
+  float: left;
+  width: 100%;
+  font-family: Arial, sans-serif;
 }
 
-/* Create two columns/boxes that floats next to each other */
 nav {
-  float: left;
-  width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
+  display: block;
+  width: 100%;
   background: #ccc;
   padding: 20px;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-article {
   float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
+  font-family: Arial, sans-serif;
 }
 
-/* Clear floats after the columns */
-section:after {
-  content: "";
-  display: table;
-  clear: both;
+section {
+  position: relative;
+  float: left;
+  width: 63%;
 }
 
-/* Style the footer */
+aside {
+float: right;
+width: 30%;
+}
+
 footer {
+  position: fixed;
   background-color: darkslategray;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   color: white;
+  left: 0;
+  bottom: 0;
+  width: 100%
 }
+    </style>
+  </head>
+  <body>
 
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
-</style>
-</head>
-<body>
-<header>
-  <h2>KITTIES TO GO!</h2>
-</header>
+    <header>
+      <h2>KITTIES TO GO!</h2>
+      <p><em>Seattle's premiere drive-thru cat rentals</em></p>
+    </header>
 
-<section>
-  <nav>
-    <ul>
-      <li><a href="#">London</a></li>
-      <li><a href="#">Paris</a></li>
-      <li><a href="#">Tokyo</a></li>
-    </ul>
-  </nav>
+    <nav>
+      <a href="#">About</a> /
+      <a href="#">Rates</a> /
+      <a href="#">Liability Release</a> /
+      <a href="#">Kitty Profiles</a> /
+      <a href="#">Book a Cat</a>
+    </nav>
 
-  <article>
-    <h1>London</h1>
-    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-  </article>
-</section>
+    <section>
+      <article>
+        <h3>Cat ipsum dolor sit amet, find something else more interesting, so catty ipsum mesmerizing birds sleep on my uman's head.</h3>
+        <p>Cat ipsum dolor sit amet, find something else more interesting, catty ipsum mesmerizing birds sleep on my human's head.</p>
+        <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+      </article>
+      <article>
+        <h3>THE KITTIES TO GO HISTORY</h3>
+        <p>Fall asleep on the washing machine snuggles up to the shoulders or knees and purrs you to sleep.</p>
+      </article>
+    </section>
 
-<footer>
-  <p>
-    <img src="images/lesson04-mock5-cat-logo.png" alt="cat logo" class=center>
-    <center><p>Aborpos nisto inci tet aut que volupti beruptiberro te ex</p></center>
-    <center><p>esseque invenienihil imaximu scidderu ptistiusam consequunt</p></center>
-    <center><p>Footer link 1 / Footer link 2 / Footer link 3 / Footer link 4<p></center>
-    <center><p>&#169;2018 Kitties To Go!, LLC | Seattle, WA<p></center>
-  </p>
-</footer>
+    <aside>
+      <code>&#60;aside&#62; <br> float: right;</code>
+    </aside>
 
-</body>
+    <footer>
+      <p>
+        <img src="images/lesson04-mock5-cat-logo.png" alt="cat logo" class=center>
+        <center><p>Aborpos nisto inci tet aut que volupti beruptiberro te ex</p></center>
+        <center><p>esseque invenienihil imaximu scidderu ptistiusam consequunt</p></center>
+        <center><p>Footer link 1 / Footer link 2 / Footer link 3 / Footer link 4<p></center>
+        <center><p>&#169;2018 Kitties To Go!, LLC | Seattle, WA<p></center>
+    </p>
+    </footer>
+
+  </body>
 </html>
