@@ -12,6 +12,16 @@ body {
   line-height: 1.3;
 }
 
+.hidden {
+  position: relative;
+  left: -10000px;
+  top: auto;
+}
+
+.hidden:focus {
+  left: 0;
+}
+
 header {
   background-color: darkcyan;
   padding: 50px;
@@ -33,6 +43,11 @@ nav {
   font-family: Arial, sans-serif;
   text-indent: 70px;
   font-weight: bold;
+}
+
+nav a {
+  padding: .5rem;
+  margin: .5rem;
 }
 
 section {
@@ -90,7 +105,7 @@ a[href="index.html"]{
 </head>
 
   <body>
-    
+    <a href="#main-content" class="hidden">Skip to main content</a>
     <header>
       <h2>KITTIES TO GO!</h2>
       <p id=header><em>Seattle's premiere drive-thru cat rentals</em></p>
@@ -104,7 +119,7 @@ a[href="index.html"]{
       <a href="index.html">Book a Cat</a>
     </nav>
 
-    <section>
+    <section id="main-content">
       <aside>
         <section>
             <h2>CATS IN THE NEWS</h2>
